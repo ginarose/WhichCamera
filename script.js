@@ -12,10 +12,9 @@ $(document).ready(function(){
 				dataType:  "jsonp",
 				success:function(data){
 					//pulls the movie poster
-					flickrID = data.user.id[0];
-					displayname = data.user.username._content[0];
-					console.log(flickrID);
-					console.log(displayname);}
-				});
+					flickrID = data.user.id;
+					displayname = data.user.username._content;
+					}
+		});
 	})
 });
